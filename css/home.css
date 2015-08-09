@@ -41,7 +41,7 @@ margin:0;
 .background-image .transparency{
   background-color:white;
 
-  height: 75%;
+  height: 100%;
   width: 100%;
 
 
@@ -50,6 +50,8 @@ margin:0;
   -o-filter: opacity(0.5);
   -ms-filter: opacity(0.5);
   filter: opacity(0.5);
+
+  border-radius:100px;
 }
 
 
