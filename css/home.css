@@ -59,27 +59,14 @@ margin:0;
   border-radius:100px;
 }
 
-.yellowTransparency{
-  background-color:yellow;
-  height: 25%;
-  width: 70%;
-  margin: 0 auto;
 
-  -webkit-filter: opacity(0.5);
-  -moz-filter: opacity(0.5);
-  -o-filter: opacity(0.5);
-  -ms-filter: opacity(0.5);
-  filter: opacity(0.5);
-  border-radius:50px;
-}
 
 
 .content{
-  z-index: 9999;
+  z-index: 9998;
 
-  position:absolute;
+  position:relative;
   display: block;
-  z-index: 1;
   height: 80%;
   width: 80%;
   left:10%;
@@ -91,6 +78,7 @@ margin:0;
   position:fixed;
   margin-left: 1%;
   margin-top: 1%;
+  z-index:9999;
 }
 
 #homePictureC{
@@ -130,22 +118,58 @@ margin:0;
        margin-top:0.1em;
 }
 
+#highlight{
+  position:relative;
+  margin: 0 auto;
+  height: 25%;
+  width: 70%;
+}
+.yellowTransparency{
+position:absolute;
+height:100%;
+width:100%;
+  background-color:yellow;
+
+  -webkit-filter: opacity(0.5);
+  -moz-filter: opacity(0.5);
+  -o-filter: opacity(0.5);
+  -ms-filter: opacity(0.5);
+  filter: opacity(0.5);
+  border-radius:50px;
+  //z-index:10;
+}
 .ball{
-  position:absolute;
-  height:75%;         
-  border-radius:37;
-  background-color:black;
+  position:relative;
+  height:5em;         
+  width:5em;         
+  border-radius:2.75em;
+  background-color:#8BC34A;
+  top:15%;
+  margin: 0 auto;
+border:solid black;
 }
 
-#leftBall{
-  left:
+.projectText{
+  position:relative; 
+  top:20%;
 }
 
-#middleBall{
-  left:
+.project{
+
+width:5em;
+height:100%;
+position: relative;
+margin: 0 auto;
+display:table-cell;
 }
 
-#rightBall{
-  left:
+#leftProject{
+  
+}
+
+#middleProject{
+}
+
+#rightProject{
 }
 
