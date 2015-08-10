@@ -56,14 +56,40 @@ margin:0;
 
 
 .content{
-  position: absolute;
-  left: 0;
-  right: 0;
   z-index: 9999;
+
+  position:absolute;
+  display: block;
+  z-index: 1;
+  height: 80%;
+  width: 80%;
+  left:10%;
+	top:10%;
 
 }
 
 #simple-menu{
+  position:fixed;
   margin-left: 10px;
   margin-top: 10px;
+}
+
+#homePictureC{
+  position:absolute;
+  width:30%;
+  left:35%;
+  top:5%;
+}
+
+#homePicture{
+    
+    width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+#dog{
+    max-width: 10%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
