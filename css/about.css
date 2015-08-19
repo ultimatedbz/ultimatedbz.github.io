@@ -61,7 +61,7 @@ margin: 0% 5% ;
   height: 40%;
   width: 49%;
   margin-left:1%;
-overflow:scroll;
+  overflow: hidden; 
   border-radius:50px;
 }
 
@@ -70,7 +70,7 @@ overflow:scroll;
   display: inline-block;
   height: 40%;
   width: 49%;
-overflow:scroll;
+  overflow: hidden; 
   border-radius:50px;
 }
 
