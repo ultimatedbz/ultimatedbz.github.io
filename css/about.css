@@ -1,0 +1,133 @@
+@font-face{
+  font-family:Manifesto;
+  src: url("../fonts/MANIFESTO.ttf")
+}
+
+@font-face{
+  font-family:Dense;
+  src: url("../fonts/Dense.otf")
+}
+*{
+  //border: 1px dashed black;
+}
+html{
+  height:100%;
+  width:100%;
+  overflow: auto; 
+padding:0;
+}
+
+body{
+margin:0;
+  height:100%;
+  width:100%;
+  background-image: url("../img/snow.jpg");
+  background-color:#ccc;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position:fixed;
+  overflow: auto; 
+}
+
+.description{
+  overflow: scroll; 
+  position:relative;
+  display: block;
+  z-index: 1;
+  height: 59%;
+  width: 100%;
+margin-bottom: 1%;
+  border-radius:50px;
+}
+
+.descriptionText{
+  position:relative;
+  font-family: Dense;
+  word-wrap:normal;
+  margin: 5%;
+  font-size:2em;
+
+}
+
+.education{
+  position:relative;
+  display: inline-block;
+  height: 40%;
+  width: 49%;
+  margin-left:1%;
+overflow:scroll;
+  border-radius:50px;
+}
+
+.work{
+  position:relative;
+  display: inline-block;
+  height: 40%;
+  width: 49%;
+overflow:scroll;
+  border-radius:50px;
+}
+
+.transparency{
+
+  position:absolute;
+  background-color:white;
+  -webkit-filter: opacity(0.5);
+  -moz-filter: opacity(0.5);
+  -o-filter: opacity(0.5);
+  -ms-filter: opacity(0.5);
+  filter: opacity(0.5);
+
+  height: 100%;
+  width: 100%;
+}
+
+
+.content{
+
+  position:relative;
+  display: block;
+  height: 90%;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+
+}
+
+#simple-menu{
+  position:fixed;
+  margin-left: 1%;
+  margin-top: 1%;
+  z-index:9999;
+  max-width: 4%;
+}
+
+
+#dog{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+
+
+#name{
+  font-size: 3em;
+       margin-bottom:0;
+       margin-top:0.1em;
+}
+
+#highlight{
+  position:relative;
+  margin: 0 auto;
+  height: 25%;
+  width: 70%;
+}
+
+.wrapper{
+  display:block;
+overflow:hidden;
+position:relative;
+  width:100%;
+        min-height:100%;
+}
