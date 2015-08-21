@@ -22,18 +22,22 @@
       <div class="content">
         <a data-toggle="modal" href="#ez-Modal">
           <div class="project" style="background-color:black">
-          <img src="img/ezlapse.png" style="float:left;width:50%; ">
-          <div style="display: table; float:right; height:100%; width:50%">
-            <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
-                      font-size: 3em;font-family:Manifesto">Take Time Lapses with Ease
-            </p>
+            <div class="leftPicture">
+              <img src="img/ezlapse.png" style="width:100%">
+            </div>
+            <div style="display: table; float:right; height:100%; width:50%">
+              <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
+                    font-size: 3em;font-family:Manifesto">Take Time Lapses with Ease
+              </p>
+            </div>
           </div>
-        </div>
         </a>
 
         <a data-toggle="modal" href="#hmu-Modal">
           <div class="project" style="background-color:#81D4FA">
-          <img src="img/hitmeup.png" style="float:left;width:50%; margin-top:10%; -webkit-transform:rotate(-20deg);">
+            <div class="leftPicture">
+              <img src="img/hitmeup.png" style="width:100%;  -webkit-transform:rotate(-20deg);">
+            </div>
           <div style="display: table; float:right; height:100%; width:50%">
             <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
                       font-size: 3em;font-family:Manifesto">Kiss Your Scheduling Problems Goodbye
@@ -44,7 +48,9 @@
 
         <a data-toggle="modal" href="#inv-Modal">
           <div class="project" style="background-color:#FF8A65">
-          <img src="img/inventory.png" style="float:left;width:48%; margin-top:10%; margin-left:1%;border-radius:3px">
+            <div class="leftPicture">
+              <img src="img/inventory.png" style="width:100%">
+            </div>
           <div style="display: table; float:right; height:100%; width:50%">
             <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
                       font-size: 3em;font-family:Manifesto">Keep Track of Your Vegetables!
@@ -55,7 +61,9 @@
 
         <a data-toggle="modal" href="#toon-Modal">
           <div class="project" style="background-color:black">
-          <img src="img/tooncutter.png" style="float:left;width:50%; margin-top:10%; ">
+            <div class="leftPicture">
+              <img src="img/tooncutter.png" style="width:100%">
+            </div>
           <div style="display: table; float:right; height:100%; width:50%">
             <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
                       font-size: 2em;font-family:Manifesto">There Are Some Things In Life You Just Can't Cut Through
@@ -77,14 +85,37 @@
       </div>
 
       <div class="modal-body">
+
           <div class="row">
             <div class="col-md-6">
-              <div class="modal-block"> <img class="fitParent" src="img/sbhacks.jpg" ></div> 
+              <div class="wrapper">
+                <div class="modal-block absolute"> <img class="fitParent" src="img/ezlapse.png" ></div> 
+              </div>
             </div>
             <div class="col-md-6">
-              <div class="modal-block"> description</div> 
+              <div class="wrapper">
+                <div class="modal-block"> 
+                     EZLapse is a tool that helps users easily take time lapses
+                </div> 
+              </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="wrapper">
+                <div class="modal-block absolute"> <img class="fitParent" src="img/sbhacks.jpg" ></div> 
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="wrapper">
+                <div class="modal-block"> The prototyped was produced in just three days at the 2015 UC Santa Barbara Hackathon</div> 
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
     </div>
   </div>
@@ -151,9 +182,9 @@
         <div id="sidr">
           <!-- Your content -->
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="About.html">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li class="active"><a href="#">Projects</a></li>
             <li><a href="#">Interests</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Resume</a></li>
