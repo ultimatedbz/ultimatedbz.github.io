@@ -49,7 +49,7 @@
         <a data-toggle="modal" href="#inv-Modal">
           <div class="project" style="background-color:#FF8A65">
             <div class="leftPicture">
-              <img src="img/inventory.png" style="width:100%;  margin-left:1%;border-radius:3px">
+              <img src="img/inventory.png" style="width:98%;  margin-left:1%;border-radius:3px">
             </div>
           <div style="display: table; float:right; height:100%; width:50%">
             <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
@@ -389,9 +389,9 @@
                 </div> 
               </div>
             </div>
-            <div class="col-md-6">
+            <a data-toggle="modal" href="#toon-bts"><div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> 
+                <div class="modal-block modal-box">
                 <div class="parent">
                   <div class="child">
                     Behind the Scenes
@@ -400,12 +400,40 @@
                 </div> 
               </div>
             </div>
-          </div>
+          </div></a>
 
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="toon-bts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+                    <div class="wrapper">
+                <div class="modal-block modal-box" style="overflow:scroll"> 
+                <div class="parent">
+                  <div class="child">
+                    Toon Cutter was my final project in CSE 167: Introduction to Computer Graphics. We had to implement two new features not covered in class so I chose to implement object collision and toon shading. I also decided to use a concept known as scene graphs which was covered in a previous lecture. When I saw the list of features we could use, toon shading immediately caught my eye. Drawing the connection to toon link, I decided that I wanted him to hit something, causing me to eventually settle on object collision as the other feature.</br></br>
+                    <b>Terms:</b></br></br>
+                    <b>Toon Shading:</b></br></br>
+                    <b>Object Collision:</b></br></br>
+                    <b>Scene Graphs:</b></br></br>
+
+                  </div> 
+                </div>
+                </div> 
+              </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
         <div id="sidr">
           <!-- Your content -->
           <ul>
@@ -431,5 +459,59 @@
        
         <!-- Include the Sidr JS -->
         <script src="js/jquery.sidr.min.js"></script>
+
+                <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+            $('#openBtn').click(function(){
+	$('#myModal').modal({show:true})
+});
+
+
+$('.modal').on('hidden.bs.modal', function( event ) {
+                $(this).removeClass( 'fv-modal-stack' );
+                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) - 1 );
+                });
+
+
+$( '.modal' ).on( 'shown.bs.modal', function ( event ) {
+                   
+                   // keep track of the number of open modals
+                   
+                   if ( typeof( $('body').data( 'fv_open_modals' ) ) == 'undefined' )
+                   {
+                     $('body').data( 'fv_open_modals', 0 );
+                   }
+                   
+                     
+                   // if the z-index of this modal has been set, ignore.
+                        
+                if ( $(this).hasClass( 'fv-modal-stack' ) )
+                        {
+                        return;
+                        }
+                   
+                $(this).addClass( 'fv-modal-stack' );
+
+                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) + 1 );
+
+                $(this).css('z-index', 1040 + (10 * $('body').data( 'fv_open_modals' )));
+
+                $( '.modal-backdrop' ).not( '.fv-modal-stack' )
+                        .css( 'z-index', 1039 + (10 * $('body').data( 'fv_open_modals' )));
+
+
+                $( '.modal-backdrop' ).not( 'fv-modal-stack' )
+                        .addClass( 'fv-modal-stack' ); 
+
+                 });
+
+        
+        });
+        
+        </script>
     </body>
 </html>
