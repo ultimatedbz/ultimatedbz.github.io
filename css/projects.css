@@ -101,24 +101,18 @@ margin:1%;
   height:100%;
   border-radius:5px;
   overflow:hidden;
+}
 
+.modal-box{
   font-family:Manifesto;
   font-size: 2em;
        background-color:#FFF59D;
 border: solid #CE93D8;
 }
-
 img{
     position: absolute;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
-}
-
-.table span{
-    position: absolute;
-  display: table-cell;
-border:black dashed;
-       vertical-align:middle;
 }
 
 .fitParent{
@@ -139,7 +133,7 @@ overflow:hidden;
   position:relative;
   height:90%;
 }
-.wrapper {
+.wrapper { /* sets aspect ratio */
 /border:dashed blue;
   width: 100%;
   /* whatever width you want */
@@ -151,7 +145,6 @@ overflow:hidden;
   /* 16:9 ratio */
   display: block;
   content: '';
-  vertical-align: middle;
 }
 
 .absolute, .table, .middle {
@@ -178,4 +171,12 @@ height:100%;
 width:50%; 
 overflow:hidden;
 position:relative
+}
+
+.parent {display: table;height:100%; width:100%}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
 }
