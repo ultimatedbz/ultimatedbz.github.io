@@ -109,7 +109,7 @@ margin:1%;
        background-color:#FFF59D;
 border: solid #CE93D8;
 }
-img{
+.content img{
     position: absolute;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
