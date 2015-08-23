@@ -1,0 +1,48 @@
+1. Introduction
+
+  Thanks for trying out Toon Cutter! This was my final project for CSE 167 Introduction to Computer Graphics. 
+  We had to implement two new features not covered in class so I chose to implement object collision and toon shading.
+  I also decided to use a concept known as scene graphs which was covered in a previous lecture. When I saw the list of
+  features we could use, toon shading immediately caught my eye. Drawing the connection to toon link, I decided that I
+  wanted him to hit something, causing me to eventually settle on object collision as the other feature.
+
+2. Terms
+
+  Toon Shading: A type of shading that gives 3D objects a more 2 Dimensional feel.
+
+  Object Collision: Senses when two objects in graphical space collide.
+
+  Scene Graphs: A programming technique that passes transformations down to children recursively. This way,
+                one transformation performed on a parent node will propagate down to its children. For example,
+                if I set Toonlink's head to be the parent of his body, and his body the parent of his arms and 
+                legs, then I can translate the head 5 units up, and his whole body, arms, and legs will also 
+                translate upwards by 5 units.
+
+3. How to Run
+
+  Open up the terminal and cd to the ToonCutter directory. Then execute the command "./ToonCutter"
+
+4. How to use 
+
+  In Toon Cutter, you have control of the bomb and Toonlink.
+
+  Keyboard:
+
+    B - Switch control between the bomb and Toonlink
+
+    M - Toggle Hit Boxes
+
+    R - Reset everything to starting position
+
+    T - Toggle Toon Shading
+
+    x, y, z - Move bomb/toonlink in negative x, y, or z direction
+
+    X, Y, Z - Move bomb/toonlink in positive x, y, or z direction
+
+  Mouse:
+
+    Left Click - Rotate around center of screen
+
+    Right Click - Translate up and down 
+
