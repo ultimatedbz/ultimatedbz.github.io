@@ -1,0 +1,41 @@
+1. Introduction/History
+
+Thanks for trying out inventory! 
+Inventory was a program I developed from scratch during the summer of 2014. I had lunch with a friend when he asked me to write a program
+for him. He needed a program to streamline the process of taking inventory for his parents' wholesale vegetable company Champion Produce Inc.
+Having only completed my basic data structures class, I wasn't sure if I could do it, but I asked him for what he wanted. That night, he 
+showed me the sheets of paper that the workers had to fill out every day to record the day's transactions of vegetables. He told me it takes at
+least 45 minutes every night just to do inventory. Anyway, that night I wrote on paper the basic design of objects and how they interacted. 
+The program started on paper, then moved to a text version, and eventually got a front-end. Along the way, I would keep checking up on him, 
+making sure that both of us were on the same page. As development progressed, he would ask for more features, such as saving, printing, and
+buying/selling multiple vegetables at once. The program was in working order in just a month and, after touching up on it from time to time, 
+was completed half a year later. I was very surprised at how I was able to make such a full program after taking a basic data structures coures.
+I learned a lot about object design as well as using Qt. Front-end is no joke!
+
+(The way they took inventory was a bit special. They needed to separate all vegetables by which company sold them and what day the vegetables
+ were bought. They also needed to know how many boxes total were in their inventory. Then they needed a history to see their past interactions.
+ To make things more complicated, they also needed to record customers returning vegetables and vegetables they returned to companies. Then they
+ also wanted three different ways of printing: today's transactions, the history, and then what's still left in the inventory.)
+
+2. How to Run
+
+If you downloaded the mac version, double click Inventory.app to get started. If you down loaded the windows
+version, go to the Inventory folder and double click Inventory.exe. When you first open the program, all the fields are empty. 
+
+3. How to Use
+
+First, you need to go to the edit menu to add some units. Then, add some vegetables, customers, and companies. After that, you can start
+buying and selling vegetables. When buying and selling, you are able to buy and sell any combination of vegetables at the same time. In the 
+breakdown box is where you can see all the groups of one particular vegetable. The groups are separated by date of purchase and company where
+the vegetable came from. At the bottom is the history where one's transactions are recorded. There is also a filter if you only want to see
+a certain type of transaction. On the top right are the two return boxes where returns to and from customers/companies are handled. When you
+need to dump your old vegetables, there is also a button for that.
+
+4. Demonstration
+
+To see a very quick demonstration, just go to File -> Load File and select one of the sample files from the Sample File folder. You can also
+use the shortcut Ctrl + O or CMD + O. To save files, just click File -> Save File or Ctrl + S or CMD + S
+
+5. Report bugs
+
+If you come across any bugs, please email me at jycprogrammer@gmail.com ! Thanks!

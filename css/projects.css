@@ -115,7 +115,7 @@ border: solid #CE93D8;
     margin: auto;
 }
 
-.modal img{
+.modal .wrapper img{
     position: absolute;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
