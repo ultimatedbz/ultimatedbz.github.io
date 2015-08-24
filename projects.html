@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/jquery.sidr.green.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/projects.css">
+        <link href="lightbox/src/css/lightbox.css" type="tex/css" rel="stylesheet">
         <!-- Include jQuery -->
         <script src="js/jquery-1.11.3.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -164,7 +165,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> <img class="fitParent" src="img/hmu_profile.png" ></div> 
+                <div class="modal-block modal-box"> <a href="img/hmu_profile.png" data-lightbox="image-1"><img class="fitParent" src="img/hmu_profile.png" ></a></div> 
               </div>
             </div>
             <div class="col-md-6">
@@ -182,7 +183,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> <img style="height:100%" src="img/hmu_friends.png" ></div> 
+                <div class="modal-block modal-box"> <a href="img/hmu_friends.png" data-lightbox="image-2"> <img style="height:100%" src="img/hmu_friends.png" ></a></div> 
               </div>
             </div>
             <div class="col-md-6">
@@ -201,7 +202,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> <img class="fitParent" src="img/hmu_compare.png" ></div> 
+                <div class="modal-block modal-box"><a href="img/hmu_compare.png" data-lightbox="image-3"><img class="fitParent" src="img/hmu_compare.png" ></a></div> 
               </div>
             </div>
             <div class="col-md-6">
@@ -219,9 +220,11 @@
 
           <div class="row">
             <div class="col-md-6">
+              <a href="img/hmu_sync.png" data-lightbox="image-4">
               <div class="wrapper">
-                <div class="modal-block modal-box" style="background-color:white"> <img class="fitParent" src="img/hmu_sync.png" ></div> 
+                <div class="modal-block modal-box" style="background-color:white"><img class="fitParent" src="img/hmu_sync.png" ></div> 
               </div>
+              </a>
             </div>
             <div class="col-md-6">
               <div class="wrapper">
@@ -829,5 +832,7 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
         });
         
         </script>
+        <script src="lightbox/src/js/lightbox.js"></script>
+
     </body>
 </html>
