@@ -17,7 +17,7 @@
 
 
       <a id="simple-menu" href="#sidr">
-          <img id="dog" src="img/menu.png" style="border-radius:5px"/>
+          <img id="dog" src="img/menu.png"/>
       </a>
       
       <div class="content">
@@ -815,10 +815,18 @@ I learned a lot about object design as well as using Qt. Front-end is no joke!
         
         $(document).ready(function() {
         
-            $('#openBtn').click(function(){
-	$('#myModal').modal({show:true})
-});
-
+  if(window.location.href.indexOf('#ez-Modal') != -1) {
+    $('#ez-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#inv-Modal') != -1) {
+    $('#inv-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#hmu-Modal') != -1) {
+    $('#hmu-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#myModal') != -1) {
+    $('#myModal').modal('show');
+  }
 
 $('.modal').on('hidden.bs.modal', function( event ) {
                 $(this).removeClass( 'fv-modal-stack' );

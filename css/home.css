@@ -17,6 +17,7 @@ margin:0;
   background-size: cover; 
   background-repeat: no-repeat;
   position:fixed;
+  overflow:scroll;
 }
 
 
@@ -27,12 +28,6 @@ margin:0;
   width: 100%;
 
   position:absolute;
-  display: block;
-  z-index: 1;
-  height: 80%;
-  width: 80%;
-  left:10%;
-	top:10%;
 
   -webkit-filter: opacity(0.5);
   -moz-filter: opacity(0.5);
@@ -51,10 +46,10 @@ margin:0;
 
   position:relative;
   display: block;
-  height: 80%;
+/  min-height: 80%;
   width: 80%;
-  left:10%;
-	top:10%;
+  margin-top:10%;
+  margin-left:10%;
 
 }
 
@@ -100,6 +95,7 @@ margin:0;
 .centeredText{
   text-align:center;
   font-family: Manifesto;
+position:relative;
 }
 
 #name{
@@ -132,10 +128,10 @@ width:100%;
   height:5em;         
   width:5em;         
   border-radius:2.75em;
-  background-color:#8BC34A;
   top:15%;
   margin: 0 auto;
 border:solid black;
+overflow:hidden;
 }
 
 .projectText{
@@ -150,4 +146,9 @@ height:100%;
 position: relative;
 margin: 0 auto;
 display:table-cell;
+}
+
+.fitparent{
+height:100%;
+width:100%;
 }
