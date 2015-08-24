@@ -25,7 +25,8 @@ margin:0;
   background-color:#ccc;
   background-size: cover; 
   background-repeat: no-repeat;
-  position:fixed;
+  background-attachment: fixed;
+//  position:fixed;
   overflow: auto; 
 }
 
@@ -135,10 +136,10 @@ margin: 0% 5% ;
 
 .wrapper{
   display:block;
-position:relative;
+  position:relative;
   width:100%;
-        min-height:100%;
-overflow:scroll;
+  min-height:100%;
+  overflow:scroll;
 }
 
 .header{

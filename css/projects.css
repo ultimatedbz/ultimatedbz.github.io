@@ -25,15 +25,15 @@ margin:0;
   background-color:#ccc;
   background-size: cover; 
   background-repeat: no-repeat;
-  position:fixed;
+  background-attachment: fixed;
   overflow: auto; 
 }
 
 .project{
   position:relative;
-  height: 48%;
-  width: 48%;
-margin:1%;
+  height: 100%;
+  width: 100%;
+  margin:1%;
   border-radius:25px;
   float:left;
   overflow:hidden;
@@ -58,7 +58,6 @@ margin:1%;
 
   position:relative;
   display: block;
-  height: 90%;
   width: 90%;
   left: 5%;
   top: 5%;
@@ -115,7 +114,7 @@ margin:1%;
 border: solid #CE93D8;
 }
 .content img{
-    position: absolute;
+    position: relative;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
 }
