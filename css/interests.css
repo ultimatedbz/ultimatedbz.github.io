@@ -152,7 +152,7 @@ overflow:hidden;
 overflow:hidden;
 }
 .wrapper:after {
-  padding-top: 76.25%;
+  padding-top: 57%;
   /* 16:9 ratio */
   display: block;
   content: '';
