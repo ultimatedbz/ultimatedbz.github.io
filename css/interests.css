@@ -126,6 +126,12 @@ margin:0;
     margin: auto;
 }
 
+.modal .wrapper2 img{
+    position: absolute;
+    top:-100%; left:0; right: 0; bottom:-100%;
+    margin: auto;
+}
+
 .fitParent{
 max-width:100%;
 }
@@ -153,6 +159,20 @@ overflow:hidden;
 }
 .wrapper:after {
   padding-top: 57%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.wrapper2 { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper2:after {
+  padding-top: 80%;
   /* 16:9 ratio */
   display: block;
   content: '';
