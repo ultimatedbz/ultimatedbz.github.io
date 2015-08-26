@@ -158,6 +158,20 @@ overflow:hidden;
   content: '';
 }
 
+.wrapper2 { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper2:after {
+  padding-top: 40%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
 .absolute, .table, .middle {
     top: 0;
     left: 0;
