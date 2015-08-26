@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jeffrey Chen | Projects
+        </title>
+        <link rel="stylesheet" href="css/jquery.sidr.green.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link href="lightbox/src/css/lightbox.css" type="tex/css" rel="stylesheet">
+        <!-- Include jQuery -->
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+
+
+      <a id="simple-menu" href="#sidr">
+          <img id="dog" src="img/menu.png"/>
+      </a>
+      
+      <div class="content">
+        <div class="row" >
+          <div class="col-md-12">
+            <div style="width:100%; color:white; font-size: 3em; 
+                                border-radius:5px;font-family:Manifesto; background-color:#43A047">
+              <div style="margin-left:1%">
+                Contact 
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row" style="margin-top:1%;">
+          <div class="col-md-12">
+              <a href="mailto:jycprogrammer@gmail.com">
+              <div class="wrapper2" style="border-radius:5px">
+                <div class="transparency"></div>
+                <div class="project" >
+                  <div class="parent">
+                    <p style="display: table-cell; vertical-align: middle; text-align:center; 
+                          font-size: 3em;font-family:Manifesto">
+                      Email
+                    </p>
+                </div>
+                </div>
+              </div>
+              </a>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:1%;">
+          <div class="col-md-12">
+              <a target="blank" href="https://www.linkedin.com/in/jycprogrammer">
+              <div class="wrapper2" style="border-radius:5px">
+                <div class="transparency"></div>
+                <div class="project" >
+                  <div class="parent">
+                    <p style="display: table-cell; vertical-align: middle; text-align:center; 
+                          font-size: 3em;font-family:Manifesto">
+                      LinkedIn
+                    </p>
+                </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+      </div> <!-- content -->
+   
+    
+
+
+        <div id="sidr">
+          <!-- Your content -->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li ><a href="projects.html">Projects</a></li>
+            <li><a href="interests.html">Interests</a></li>
+            <li class="active"><a href="#">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </div>
+
+
+
+
+      <script>
+        $(document).ready(function() {
+          $('#simple-menu').sidr({displace:true});
+          $.sidr("close");
+        });
+      </script>
+
+       
+        <!-- Include the Sidr JS -->
+        <script src="js/jquery.sidr.min.js"></script>
+
+                <!-- JavaScript jQuery code from Bootply.com editor -->
+        
+        <script type='text/javascript'>
+        
+        $(document).ready(function() {
+        
+  if(window.location.href.indexOf('#ez-Modal') != -1) {
+    $('#ez-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#inv-Modal') != -1) {
+    $('#inv-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#hmu-Modal') != -1) {
+    $('#hmu-Modal').modal('show');
+  }
+    if(window.location.href.indexOf('#myModal') != -1) {
+    $('#myModal').modal('show');
+  }
+
+$('.modal').on('hidden.bs.modal', function( event ) {
+                $(this).removeClass( 'fv-modal-stack' );
+                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) - 1 );
+                });
+
+
+$( '.modal' ).on( 'shown.bs.modal', function ( event ) {
+                   
+                   // keep track of the number of open modals
+                   
+                   if ( typeof( $('body').data( 'fv_open_modals' ) ) == 'undefined' )
+                   {
+                     $('body').data( 'fv_open_modals', 0 );
+                   }
+                   
+                     
+                   // if the z-index of this modal has been set, ignore.
+                        
+                if ( $(this).hasClass( 'fv-modal-stack' ) )
+                        {
+                        return;
+                        }
+                   
+                $(this).addClass( 'fv-modal-stack' );
+
+                $('body').data( 'fv_open_modals', $('body').data( 'fv_open_modals' ) + 1 );
+
+                $(this).css('z-index', 1040 + (10 * $('body').data( 'fv_open_modals' )));
+
+                $( '.modal-backdrop' ).not( '.fv-modal-stack' )
+                        .css( 'z-index', 1039 + (10 * $('body').data( 'fv_open_modals' )));
+
+
+                $( '.modal-backdrop' ).not( 'fv-modal-stack' )
+                        .addClass( 'fv-modal-stack' ); 
+
+                 });
+
+        
+        });
+        
+        </script>
+        <script src="lightbox/src/js/lightbox.js"></script>
+
+    </body>
+</html>

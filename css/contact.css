@@ -1,0 +1,116 @@
+@font-face{
+  font-family:Manifesto;
+  src: url("../fonts/MANIFESTO.ttf")
+}
+
+@font-face{
+  font-family:Dense;
+  src: url("../fonts/Dense.otf")
+}
+*{
+/  border: 1px dashed white;
+}
+html{
+  height:100%;
+  width:100%;
+  overflow: auto; 
+padding:0;
+}
+
+body{
+margin:0;
+  height:100%;
+  width:100%;
+  background-image: url("../img/library.jpg");
+  background-color:#ccc;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: auto; 
+}
+
+.project{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  margin:1%;
+  border-radius:25px;
+  overflow:hidden;
+}
+
+.transparency{
+
+  position:absolute;
+  background-color:white;
+  -webkit-filter: opacity(0.7);
+  -moz-filter: opacity(0.7);
+  -o-filter: opacity(0.7);
+  -ms-filter: opacity(0.7);
+  filter: opacity(0.7);
+
+  height: 100%;
+  width: 100%;
+}
+
+
+.content{
+
+  position:relative;
+  display: block;
+  width: 90%;
+  left: 5%;
+  top: 5%;
+
+}
+
+#simple-menu{
+  background-color: #8BC34A;
+  border: solid 6px #4CAF50;
+  position:fixed;
+  margin-left: 1%;
+  margin-top: 1%;
+  z-index:9999;
+  min-width:50px;
+  width: 3%;
+  height:auto;
+  border-radius:5px;
+}
+
+
+#dog{
+
+    width: 80%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    margin:10%;
+}
+
+.row{
+position:relative;
+overflow:hidden;
+}
+
+.wrapper2 { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper2:after {
+  padding-top: 25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+
+.parent {display: table;height:100%; width:100%} /* For centering */
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+
