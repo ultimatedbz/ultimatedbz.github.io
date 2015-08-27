@@ -45,7 +45,7 @@ margin-bottom: 1%;
   font-family: Dense;
   word-wrap:normal;
   font-size:2em;
-margin: 0% 5% 
+  margin: 0% 5% 
 }
 .detailText{
   position:relative;
@@ -152,12 +152,46 @@ margin: 0% 5% ;
   margin-bottom: 1%;
 }
 
-.wrapper1{
-  position:relative;
-  display: inline-block;
-  height: 70%;
+.wrapper { /* sets aspect ratio */
   width: 100%;
-  margin-left:1%;
-  overflow:scroll;
-/border:dashed black;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
 }
+.wrapper:after {
+  padding-top: 20%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.wrapper2 { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper2:after {
+  padding-top: 50%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.row{
+position:relative;
+//overflow:hidden;
+/border: black dashed;
+}
+
+.parent {display: table;height:100%; width:100%} /* For centering */
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:left;
+}
+
+
