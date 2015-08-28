@@ -807,8 +807,8 @@
           <div class="row">
             <div class="parent" >
               <div class="child">
-                <a data-toggle="modal" href="#wlh-Modal">
-                  <img src="img/anime_class2.png" style="height:3em; ">
+                <a href="#">
+                <img id="class" src="img/anime_class2.png" style="height:3em; ">
                 </a>
               </div>
             </div>
@@ -1272,6 +1272,24 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
         </script>
         <script src="lightbox/src/js/lightbox.js"></script>
         <script type='text/javascript'>
+
+          $('#class').hover(function() {
+          },function() {
+              $('#anime2').css({backgroundImage: 'url(img/anime_naruto1.jpg)'});
+              $('#anime1').css({backgroundImage: 'url(img/anime_dbz1.jpg)'});
+              $('#anime3').css({backgroundImage: 'url(img/anime_fz1.jpg)'});
+              $('#anime4').css({backgroundImage: 'url(img/anime_sao1.jpg)'});
+          });
+          $('#class').on('click hover', function(){
+
+              $('#anime2').css({backgroundImage: 'url(img/anime_class1.gif)'});
+              $('#anime1').css({backgroundImage: 'url(img/anime_class2.gif)'});
+              $('#anime3').css({backgroundImage: 'url(img/anime_class3.gif)'});
+              $('#anime4').css({backgroundImage: 'url(img/anime_class4.gif)'});
+
+          });
+
+
           $(".animeBar").each(function(){
             $(this).fadeTo(0,0);    
           });
@@ -1306,7 +1324,7 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
               if(bg.substr(-3,3) === 'jpg')
                 $('#anime2').css({backgroundImage: 'url(img/anime_naruto1.gif)'});
               else
-                $('#anime2').css({backgroundImage: 'url(img/anime_naruto'+ ((parseInt(bg.substr(-5,1))) % 5 + 1) +'.gif)'});
+                $('#anime2').css({backgroundImage: 'url(img/anime_naruto'+ ((parseInt(bg.substr(-5,1))) % 6 + 1) +'.gif)'});
 
           });
 
