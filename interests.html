@@ -767,7 +767,7 @@
               <div style="position:relative; width:100%; display: inline-block">
                 <div class="modal-box" style="text-align: center; font-size:1.5em; font-family:Myriad" >
                  Ever since middle school, watching anime has always been one of my favorite past times. 
-                 In my opinion, anime spurs imagination, tells fascinating stories, and preaches valuable lessons.
+                 Anime spurs imagination, tells fascinating stories, and preaches valuable lessons.
                  Here are a couple of my favorite ones.
                 </div> 
               </div>
@@ -777,7 +777,6 @@
           <div class="row" style="margin-top:1%">
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#caoge-Modal">
                   <div class="modal-block modal-box" id="anime1">
                     <div class="animeBar" id="dbz" >
                       <div class="parent ">
@@ -788,12 +787,10 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#jay-Modal">
                   <div class="modal-block modal-box" id="anime2">
                     <div class="animeBar" id="naruto" >
                       <div class="parent" >
@@ -804,7 +801,6 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
           </div> 
@@ -820,7 +816,6 @@
           <div class="row"> 
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#wlh-Modal">
                   <div class="modal-block modal-box"  id="anime3">
                     <div class="animeBar" id="fz">
                       <div class="parent" >
@@ -831,12 +826,10 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#jjlin-Modal">
                   <div class="modal-block modal-box"  id="anime4">
                     <div class="animeBar" id="sao" >
                       <div class="parent" >
@@ -847,7 +840,6 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
           </div>      
@@ -1287,21 +1279,68 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
               $('#dbz').fadeTo(1,1);
           },function() {
               $('#dbz').fadeTo(1,0);
+              $('#anime1').css({backgroundImage: 'url(img/anime_dbz1.jpg)'});
           });
+
+          $('#anime1').on('click hover', function(){
+              var bg = $(this).css('background-image');
+              bg = bg.replace('url(','').replace(')','');
+
+              if(bg.substr(-3,3) === 'jpg')
+                $('#anime1').css({backgroundImage: 'url(img/anime_dbz1.gif)'});
+              else
+                $('#anime1').css({backgroundImage: 'url(img/anime_dbz'+ ((parseInt(bg.substr(-5,1))) % 7 + 1) +'.gif)'});
+
+          });
+
           $('#anime2').hover(function() {
               $('#naruto').fadeTo(1,1);
           },function() {
               $('#naruto').fadeTo(1,0);
+              $('#anime2').css({backgroundImage: 'url(img/anime_naruto1.jpg)'});
           });
+          $('#anime2').on('click hover', function(){
+              var bg = $(this).css('background-image');
+              bg = bg.replace('url(','').replace(')','');
+
+              if(bg.substr(-3,3) === 'jpg')
+                $('#anime2').css({backgroundImage: 'url(img/anime_naruto1.gif)'});
+              else
+                $('#anime2').css({backgroundImage: 'url(img/anime_naruto'+ ((parseInt(bg.substr(-5,1))) % 5 + 1) +'.gif)'});
+
+          });
+
           $('#anime3').hover(function() {
               $('#fz').fadeTo(1,1);
           },function() {
               $('#fz').fadeTo(1,0);
+              $('#anime3').css({backgroundImage: 'url(img/anime_fz1.jpg)'});
+          });
+          $('#anime3').on('click hover', function(){
+              var bg = $(this).css('background-image');
+              bg = bg.replace('url(','').replace(')','');
+
+              if(bg.substr(-3,3) === 'jpg')
+                $('#anime3').css({backgroundImage: 'url(img/anime_fz1.gif)'});
+              else
+                $('#anime3').css({backgroundImage: 'url(img/anime_fz'+ ((parseInt(bg.substr(-5,1))) % 5 + 1) +'.gif)'});
+
+          });
+          $('#anime4').on('click hover', function(){
+              var bg = $(this).css('background-image');
+              bg = bg.replace('url(','').replace(')','');
+
+              if(bg.substr(-3,3) === 'jpg')
+                $('#anime4').css({backgroundImage: 'url(img/anime_sao1.gif)'});
+              else
+                $('#anime4').css({backgroundImage: 'url(img/anime_sao'+ ((parseInt(bg.substr(-5,1))) % 5 + 1) +'.gif)'});
+
           });
           $('#anime4').hover(function() {
               $('#sao').fadeTo(1,1);
           },function() {
               $('#sao').fadeTo(1,0);
+              $('#anime4').css({backgroundImage: 'url(img/anime_sao1.jpg)'});
           });
         </script>
 
