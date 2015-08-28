@@ -778,9 +778,9 @@
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#caoge-Modal">
-                  <div class="modal-block modal-box music1">
-                    <div class="rightBar" style="background-color:green">
-                      <div class="parent" >
+                  <div class="modal-block modal-box" id="anime1">
+                    <div class="rightBar animeBar" id="dbz" style="background-color:green">
+                      <div class="parent ">
                         <div class="child">
                           <div class="transparency"></div>
                           <div class="centeredText"> Dragon Ball Z</div>
@@ -794,8 +794,8 @@
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#jay-Modal">
-                  <div class="modal-block modal-box music2">
-                    <div class="rightBar"style="background-color:purple">
+                  <div class="modal-block modal-box" id="anime2">
+                    <div class="rightBar animeBar" id="naruto" style="background-color:purple">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -812,8 +812,8 @@
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#wlh-Modal">
-                  <div class="modal-block modal-box music3">
-                    <div class="rightBar"style="background-color:orange">
+                  <div class="modal-block modal-box"  id="anime3">
+                    <div class="rightBar animeBar" id="fz" style="background-color:orange">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -828,8 +828,8 @@
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#jjlin-Modal">
-                  <div class="modal-block modal-box music4">
-                    <div class="rightBar"style="background-color:yellow">
+                  <div class="modal-block modal-box"  id="anime4">
+                    <div class="rightBar animeBar" id="sao" style="background-color:yellow">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -1213,6 +1213,7 @@
         
         $(document).ready(function() {
         
+
   if(window.location.href.indexOf('#ez-Modal') != -1) {
     $('#ez-Modal').modal('show');
   }
@@ -1269,6 +1270,16 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
         
         </script>
         <script src="lightbox/src/js/lightbox.js"></script>
+        <script type='text/javascript'>
+          $(".animeBar").each(function(){
+            $(this).fadeTo(0,0);    
+          });
+          $('#anime1').hover(function() {
+              $('#dbz').fadeTo(1,1);
+          },function() {
+              $('#dbz').fadeTo(1,0);
+          });
+        </script>
 
     </body>
 </html>

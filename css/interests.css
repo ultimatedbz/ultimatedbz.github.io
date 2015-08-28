@@ -292,3 +292,27 @@ color:black;
   width:4em;
 float: right;
 }
+
+.animeBar{
+
+}
+
+#anime1{
+  background-image: url("../img/anime_dbz1.jpg");
+  background-size: cover; 
+}
+
+#anime2{
+  background-image: url("../img/music_jjlin3.png");
+  background-size: cover; 
+}
+
+#anime3{
+  background-image: url("../img/music_jjlin3.png");
+  background-size: cover; 
+}
+
+#anime4{
+  background-image: url("../img/music_jjlin3.png");
+  background-size: cover; 
+}
