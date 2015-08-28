@@ -294,7 +294,8 @@ float: right;
 }
 
 .animeBar{
-
+  height:100%;
+width:100%;
 }
 
 #anime1{
@@ -303,16 +304,18 @@ float: right;
 }
 
 #anime2{
-  background-image: url("../img/music_jjlin3.png");
+  background-image: url("../img/anime_naruto1.jpg");
   background-size: cover; 
+  background-position:0 -.5em;
+    background-repeat:no-repeat
 }
 
 #anime3{
-  background-image: url("../img/music_jjlin3.png");
+  background-image: url("../img/anime_fz1.jpg");
   background-size: cover; 
 }
 
 #anime4{
-  background-image: url("../img/music_jjlin3.png");
+  background-image: url("../img/anime_sao1.jpg");
   background-size: cover; 
 }

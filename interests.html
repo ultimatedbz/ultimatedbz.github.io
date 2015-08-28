@@ -779,7 +779,7 @@
               <div class="wrapper">
                 <a data-toggle="modal" href="#caoge-Modal">
                   <div class="modal-block modal-box" id="anime1">
-                    <div class="rightBar animeBar" id="dbz" style="background-color:green">
+                    <div class="animeBar" id="dbz" >
                       <div class="parent ">
                         <div class="child">
                           <div class="transparency"></div>
@@ -795,7 +795,7 @@
               <div class="wrapper">
                 <a data-toggle="modal" href="#jay-Modal">
                   <div class="modal-block modal-box" id="anime2">
-                    <div class="rightBar animeBar" id="naruto" style="background-color:purple">
+                    <div class="animeBar" id="naruto" >
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -808,12 +808,17 @@
               </div>
             </div>
           </div> 
-          <div class="row" style="margin-top:1%">
+          <div class="row">
+            <a data-toggle="modal" href="#wlh-Modal">
+              <img src="img/anime_class2.png" style="height:3em; margin:auto; display:block">
+            </a>
+          </div>
+          <div class="row"> 
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#wlh-Modal">
                   <div class="modal-block modal-box"  id="anime3">
-                    <div class="rightBar animeBar" id="fz" style="background-color:orange">
+                    <div class="animeBar" id="fz">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -829,7 +834,7 @@
               <div class="wrapper">
                 <a data-toggle="modal" href="#jjlin-Modal">
                   <div class="modal-block modal-box"  id="anime4">
-                    <div class="rightBar animeBar" id="sao" style="background-color:yellow">
+                    <div class="animeBar" id="sao" >
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -1047,7 +1052,7 @@
         <h4 class="modal-title" id="myModalLabel">Food</h4>
       </div>
       <div class="modal-body">
-          <div class="row" style="margin-top:1%">
+          <div class="row" rtyle="margin-top:1%">
             <div class="col-md-6">
               <div class="wrapper">
                 <a data-toggle="modal" href="#caoge-Modal">
@@ -1278,6 +1283,21 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
               $('#dbz').fadeTo(1,1);
           },function() {
               $('#dbz').fadeTo(1,0);
+          });
+          $('#anime2').hover(function() {
+              $('#naruto').fadeTo(1,1);
+          },function() {
+              $('#naruto').fadeTo(1,0);
+          });
+          $('#anime3').hover(function() {
+              $('#fz').fadeTo(1,1);
+          },function() {
+              $('#fz').fadeTo(1,0);
+          });
+          $('#anime4').hover(function() {
+              $('#sao').fadeTo(1,1);
+          },function() {
+              $('#sao').fadeTo(1,0);
           });
         </script>
 
