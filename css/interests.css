@@ -42,15 +42,15 @@ margin:0;
 
   position:absolute;
   background-color:white;
-  -webkit-filter: opacity(0.5);
-  -moz-filter: opacity(0.5);
-  -o-filter: opacity(0.5);
-  -ms-filter: opacity(0.5);
-  filter: opacity(0.5);
+  -webkit-filter: opacity(0.4);
+  -moz-filter: opacity(0.4);
+  -o-filter: opacity(0.4);
+  -ms-filter: opacity(0.4);
+  filter: opacity(0.4);
 
   height: 100%;
   width: 100%;
-top:0;
+  top:0;
 }
 
 
@@ -234,6 +234,61 @@ color:black;
 }
 
 .music1{
-  background-image: url("../img/singing_caoge2.jpg");
+  background-image: url("../img/music_caoge1.jpg");
   background-size: cover; 
+  background-repeat:no-repeat;
+  background-position: -4em 0;
+  background-color:grey;
+}
+
+.music1:hover{
+  background-image: url("../img/music_caoge4.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  background-color:black;
+}
+
+.music2{
+  background-image: url("../img/music_jay2.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+}
+
+.music2:hover{
+  background-image: url("../img/music_jay4.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-color:black;
+}
+
+.music3{
+  background-image: url("../img/music_wlm2.jpg");
+  background-size: cover; 
+  background-position: -4em 0;
+  background-repeat:no-repeat;
+}
+.music3:hover{
+  background-image: url("../img/music_wlh4.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-color:black;
+  background-position: 0 -.6em;
+}
+.music4{
+  background-image: url("../img/music_jjlin2.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+}
+.music4:hover{
+  background-image: url("../img/music_jjlin3.png");
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-color:black;
+  background-position:-1.3em 0em;
+}
+.rightBar{
+  height:100%;
+  width:4em;
+float: right;
 }
