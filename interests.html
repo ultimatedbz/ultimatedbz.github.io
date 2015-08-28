@@ -808,7 +808,7 @@
             <div class="parent" >
               <div class="child">
                 <a href="#">
-                <img id="class" src="img/anime_class2.png" style="height:3em; ">
+                  <img id="class" src="img/anime_class2.png" style="height:3em; ">
                 </a>
               </div>
             </div>
@@ -869,28 +869,26 @@
               </div>
             </div>
           </div> 
+
           <div class="row" style="margin-top:1%">
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#caoge-Modal">
-                  <div class="modal-block modal-box music1">
-                    <div class="rightBar" style="background-color:green">
-                      <div class="parent" >
+                  <div class="modal-block modal-box" id="vg1">
+                    <div class="animeBar" id="zelda" >
+                      <div class="parent ">
                         <div class="child">
                           <div class="transparency"></div>
-                          <div class="centeredText"> Legend of Zelda: The Wind Waker</div>
+                          <div class="centeredText"> Legend of Zelda</div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#jay-Modal">
-                  <div class="modal-block modal-box music2">
-                    <div class="rightBar"style="background-color:purple">
+                  <div class="modal-block modal-box" id="vg2">
+                    <div class="animeBar" id="tetris" >
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -899,16 +897,15 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
           </div> 
-          <div class="row" style="margin-top:1%">
+  
+          <div class="row"> 
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#wlh-Modal">
-                  <div class="modal-block modal-box music3">
-                    <div class="rightBar"style="background-color:orange">
+                  <div class="modal-block modal-box"  id="vg3">
+                    <div class="animeBar" id="phoenix">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -917,26 +914,23 @@
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
             <div class="col-md-6">
               <div class="wrapper">
-                <a data-toggle="modal" href="#jjlin-Modal">
-                  <div class="modal-block modal-box music4">
-                    <div class="rightBar"style="background-color:yellow">
+                  <div class="modal-block modal-box"  id="vg4">
+                    <div class="animeBar" id="smash" >
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
-                          <div class="centeredText"> Sonic Adventure 2 Battle </div>
+                          <div class="centeredText"> Super Smash Bros. </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </a>
               </div>
             </div>
-          </div>
+          </div>  
 
 
       </div> <!-- modal body -->
@@ -1359,6 +1353,28 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
           },function() {
               $('#sao').fadeTo(1,0);
               $('#anime4').css({backgroundImage: 'url(img/anime_sao1.jpg)'});
+          });
+
+
+          $('#vg1').hover(function() {
+              $('#zelda').fadeTo(1,1);
+          },function() {
+              $('#zelda').fadeTo(1,0);
+          });
+          $('#vg2').hover(function() {
+              $('#tetris').fadeTo(1,1);
+          },function() {
+              $('#tetris').fadeTo(1,0);
+          });
+          $('#vg3').hover(function() {
+              $('#phoenix').fadeTo(1,1);
+          },function() {
+              $('#phoenix').fadeTo(1,0);
+          });
+          $('#vg4').hover(function() {
+              $('#smash').fadeTo(1,1);
+          },function() {
+              $('#smash').fadeTo(1,0);
           });
         </script>
 

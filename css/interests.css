@@ -319,3 +319,24 @@ width:100%;
   background-image: url("../img/anime_sao1.jpg");
   background-size: cover; 
 }
+
+#vg1{
+  background-image: url("../img/vg_link.gif");
+  background-size: cover; 
+}
+
+#vg2{
+  background-image: url("../img/vg_tetris.gif");
+  background-size: cover; 
+  background-position: 0 -1em
+}
+
+#vg3{
+  background-image: url("../img/vg_phoenix.gif");
+  background-size: cover; 
+}
+
+#vg4{
+  background-image: url("../img/vg_smash.gif");
+  background-size: cover; 
+}
