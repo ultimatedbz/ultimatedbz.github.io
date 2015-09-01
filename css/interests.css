@@ -150,6 +150,7 @@ margin:0;
     margin: auto;
 }
 
+
 .modal-header .active li{
   background-color: #CCFF90;
 }
@@ -194,6 +195,20 @@ overflow:hidden;
 overflow:hidden;
 }
 .wrapper2:after {
+  padding-top: 80%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+#dessert .wrapper:after{
+  padding-top: 80%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+#restaurant .wrapper:after{
   padding-top: 80%;
   /* 16:9 ratio */
   display: block;
@@ -381,26 +396,92 @@ width:100%;
 }
 
 #food1{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_oscars.jpg");
   background-size: cover; 
+  background-position: 0 -2em;
 }
 #food2{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_sakura.jpg");
   background-size: cover; 
 }
 #food3{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_ota3.jpg");
   background-size: cover; 
 }
 #food4{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_grandma2.jpg");
   background-size: cover; 
+  background-position: 0 -2.8em;
 }
 #food5{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_gordo6.jpg");
   background-size: cover; 
+  background-position: 0 -2.5em;
 }
 #food6{
-  background-image: url("../img/movies_fight.gif");
+  background-image: url("../img/food_hinotez3.jpg");
   background-size: cover; 
+  background-position: 0 -2.5em;
+}
+#food7{
+  background-image: url("../img/food_okan.jpg");
+  background-size: cover; 
+  background-position: 0 -2.5em;
+}
+#food8{
+  background-image: url("../img/food_phocadao3.jpg");
+  background-size: cover; 
+  background-position: 0 -2.5em;
+}
+#food9{
+  background-image: url("../img/food_raki1.jpg");
+  background-size: cover; 
+  background-position: 0 -2.5em;
+}
+
+#dessert1{
+  background-image: url("../img/dessert_sage2.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
+
+
+#dessert2{
+  background-image: url("../img/dessert_class2.jpg");
+  background-size: cover; 
+  background-position: 0 -3em;
+}
+
+
+#dessert3{
+  background-image: url("../img/dessert_hielo.jpg");
+  background-size: cover; 
+  background-position: 0 -2em ;
+}
+
+
+#dessert4{
+  background-image: url("../img/dessert_iceskimo.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
+
+
+#dessert5{
+  background-image: url("../img/dessert_85c.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
+
+
+#dessert6{
+  background-image: url("../img/dessert_halfnhalf.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
+
+.tobediscovered{
+  background-color:black;
+  height:100%;
+width:100%;
 }
