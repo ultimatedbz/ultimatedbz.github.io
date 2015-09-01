@@ -90,6 +90,10 @@ margin:0;
   / background-color: red;
 }
 
+.modal-content{
+  background-color: #CCFF90;
+}
+
 .modal-header {
   background-color:#81D4FA;
 }
@@ -97,6 +101,19 @@ margin:0;
 .modal-body {
   background-color: #CCFF90;
 }
+
+.tab-content{
+  background-color: #CCFF90;
+}
+
+.nav-tabs{
+  background-color: white;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  background-color: #CCFF90;
+}
+
 .modal-dialog{
   /width: 80%;
 }
@@ -131,6 +148,10 @@ margin:0;
     position: absolute;
     top:-100%; left:0; right: 0; bottom:-100%;
     margin: auto;
+}
+
+.modal-header .active li{
+  background-color: #CCFF90;
 }
 
 .fitParent{
@@ -356,6 +377,7 @@ width:100%;
 #mov4{
   background-image: url("../img/movies_fight.gif");
   background-size: cover; 
+  background-position:-1.5em 0;
 }
 
 #food1{
