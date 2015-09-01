@@ -1342,11 +1342,11 @@
             </div>
           </div> 
           <div class="row" style="margin-top:1%">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="wrapper">
-                <a data-toggle="modal" href="#caoge-Modal">
-                  <div class="modal-block modal-box music1">
-                    <div class="rightBar" style="background-color:green">
+                <a data-toggle="modal" href="#yellow-Modal">
+                  <div class="modal-block modal-box" id="place1">
+                    <div class="animeBar" id="yellowstone">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -1358,11 +1358,13 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-6">
+          </div> 
+          <div class="row" style="margin-top:1%">
+            <div class="col-md-12">
               <div class="wrapper">
-                <a data-toggle="modal" href="#jay-Modal">
-                  <div class="modal-block modal-box music2">
-                    <div class="rightBar"style="background-color:purple">
+                <a data-toggle="modal" href="#sf-Modal">
+                  <div class="modal-block modal-box" id="place2">
+                    <div class="animeBar" id="sf">
                       <div class="parent" >
                         <div class="child">
                           <div class="transparency"></div>
@@ -1698,6 +1700,17 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
               $('#').fadeTo(1,1);
           },function() {
               $('#').fadeTo(1,0);
+          });
+
+          $('#place1').hover(function() {
+              $('#yellowstone').fadeTo(1,1);
+          },function() {
+              $('#yellowstone').fadeTo(1,0);
+          });
+          $('#place2').hover(function() {
+              $('#sf').fadeTo(1,1);
+          },function() {
+              $('#sf').fadeTo(1,0);
           });
         </script>
 

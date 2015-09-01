@@ -485,3 +485,16 @@ width:100%;
   height:100%;
 width:100%;
 }
+
+#place1{
+  background-image: url("../img/place_.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
+
+
+#place2{
+  background-image: url("../img/place_.jpg");
+  background-size: cover; 
+  background-position: 0 0;
+}
