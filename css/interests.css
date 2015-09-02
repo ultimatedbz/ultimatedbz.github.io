@@ -126,6 +126,10 @@ margin:0;
   overflow:hidden;
 }
 
+#jay-Modal .modal-box{
+  border: solid #64B5F6;
+}
+
 .modal-box{
   font-family:Manifesto;
   font-size: 2em;
@@ -323,6 +327,27 @@ color:black;
   background-color:black;
   background-position:-1.3em 0em;
 }
+
+.music5{
+  background-image: url("../img/music_wyt.jpg");
+  background-size: cover; 
+  background-position: 0 -1em;
+  background-repeat:no-repeat;
+}
+.music5:hover{
+  background-image: url("../img/music_wyt2.jpg");
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-color:black;
+  background-position: -4em 0;
+}
+.music6{
+  background-size: cover; 
+  background-repeat:no-repeat;
+  background-color:pink;
+}
+
+
 .rightBar{
   height:100%;
   width:4em;
@@ -487,14 +512,14 @@ width:100%;
 }
 
 #place1{
-  background-image: url("../img/place_.jpg");
+  background-image: url("../img/yellowstone/1.jpg");
   background-size: cover; 
   background-position: 0 0;
 }
 
 
 #place2{
-  background-image: url("../img/place_.jpg");
+  background-image: url("../img/yellowstone/3.jpg");
   background-size: cover; 
   background-position: 0 0;
 }
