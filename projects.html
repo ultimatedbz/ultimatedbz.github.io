@@ -38,7 +38,7 @@
               <div class="wrapper2"style="border-radius:25px">
                 <div class="project" style="background-color:black">
                   <div class="leftPicture">
-                    <img src="img/ezlapse.png" style="width:100%">
+                    <img src="img/project_ezlapse.png" style="width:100%">
                   </div>
                   <div style="display: table; float:right; height:100%; width:50%">
                     <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
@@ -94,7 +94,7 @@
             <div class="wrapper2"style="border-radius:25px">
             <div class="project" style="background-color:black">
               <div class="leftPicture">
-                <img src="img/tooncutter.png" style="width:100%">
+                <img src="img/project_tooncutter.png" style="width:100%">
               </div>
             <div style="display: table; float:right; height:100%; width:50%">
               <p style="display: table-cell; vertical-align: middle;color:white; text-align:center; 
@@ -759,6 +759,28 @@ $( '.modal' ).on( 'shown.bs.modal', function ( event ) {
         
         });
         
+        </script>
+        <script>
+            var ink, d, x, y;
+            $(".project").hover(function(e){
+              if($(this).find(".ink").length === 0){
+                  $(this).prepend("<span class='ink'></span>");
+              }
+                   
+              ink = $(this).find(".ink");
+              ink.removeClass("animate");
+               
+              if(!ink.height() && !ink.width()){
+                  d = Math.max($(this).outerWidth(), $(this).outerHeight());
+                  ink.css({height: d, width: d});
+              }
+               
+              x = $(this).width - $(this).offset().left - ink.width()/2;
+              y = $(this).height()/2 - $(this).offset().top - ink.height()/2;
+               
+              ink.css({top: '-75%', left: '0'}).addClass("animate");
+          },function(){});
+
         </script>
         <script src="lightbox/src/js/lightbox.js"></script>
 

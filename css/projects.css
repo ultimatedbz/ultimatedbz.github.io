@@ -117,7 +117,7 @@ margin:0;
 .modal-box{
   font-family:Manifesto;
   font-size: 2em;
-  background-color:#E3F2FD;
+  background-color:#F3E5F5;
   border: solid #CE93D8;
 }
 .content img{
@@ -233,4 +233,37 @@ table {margin:1%}
   color:white;
   font-family:Museo-Sans, helvetica, arial, sans-serif;
   text-align:center;
+}
+
+.ink {
+  display: block;
+  position: absolute;
+  background:rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  -webkit-transform:scale(0);
+     -moz-transform:scale(0);
+       -o-transform:scale(0);
+          transform:scale(0);
+}
+
+.animate {
+	-webkit-animation:ripple 0.95s linear;
+   -moz-animation:ripple 0.95s linear;
+    -ms-animation:ripple 0.95s linear;
+     -o-animation:ripple 0.95s linear;
+        animation:ripple 0.95s linear;
+}
+
+@-webkit-keyframes ripple {
+    100% {opacity: 0; -webkit-transform: scale(2.5);}
+}
+@-moz-keyframes ripple {
+    100% {opacity: 0; -moz-transform: scale(2.5);}
+}
+@-o-keyframes ripple {
+    100% {opacity: 0; -o-transform: scale(2.5);}
+}
+
+@keyframes ripple {
+    100% {opacity: 0; transform: scale(2.5);}
 }
