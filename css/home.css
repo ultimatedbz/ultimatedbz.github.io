@@ -40,6 +40,7 @@ min-width:1024px;
   filter: opacity(0.6);
 
   border-radius:25px;
+border: 3px black solid;
 }
 
 
@@ -52,7 +53,7 @@ min-width:1024px;
   display: inline-block;
 /  min-height: 80%;
   width: 90%;
-  margin-top:5%;
+  margin-top:2.5%;
   margin-left:5%;
   text-align:center;
 
@@ -83,11 +84,11 @@ min-width:1024px;
 
 
 #homePictureC{
-  width:48%;
+  width:100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top:2%;
+position:absolute;
       
 }
 
@@ -102,7 +103,8 @@ min-width:1024px;
 .centeredText{
   text-align:center;
   font-family: Manifesto;
-position:relative;
+  position:relative;
+           font-size:1.5em;
 }
 
 #name{
@@ -120,9 +122,10 @@ position:relative;
 display:inline-block;
 }
 .yellowTransparency{
-position:absolute;
-height:100%;
-width:100%;
+  border: 3px black solid;
+  position:absolute;
+  height:100%;
+  width:100%;
   background-color:yellow;
 
   -webkit-filter: opacity(0.5);
@@ -168,4 +171,36 @@ width:100%;
   padding-right:1em;
   width:100%;
 height:100%;
+}
+
+
+
+.wrapper { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper:after {
+  padding-top: 56.25%;
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
+.parent {display: table;height:100%; width:100%} /* For centering */
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.modal-block{
+  position:absolute;
+  width: 100%;
+  height:100%;
+  border-radius:5px;
+  overflow:hidden;
 }

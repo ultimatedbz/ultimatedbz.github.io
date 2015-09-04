@@ -17,22 +17,50 @@
 
       <div class="content">
         <div class="transparency"></div>
+        
         <div class="row" style="margin-top:1%">
+                  <div class="col-md-12">
+            <div class="padding">
+        <div class="highlight">
+          <div class="yellowTransparency" style="background-color:magenta"></div>
+                <div style="position:relative;width:100%">
+                <p class="centeredText" id="name">Jeffrey Chen</p>
+                <p class="centeredText">Mobile & Desktop App Developer</p>
+                <p class="centeredText">B.S. Computer Science Undergraduate, UCSD</p>
+                </div>
+                </div>
+                </div>
+                </div>
+        </div>
+        
+        <div class="row" style="margin-top:0%">
           <div class="col-md-6">
             <div class="padding">
-            <div class="highlight">
-              <div class="yellowTransparency"style="background-color:blue; "></div>
-              <div id="homePicture"style="position:relative;display:inline-block">  
-                <img id="homePictureC" src="img/home.jpg" style="border-radius:10px"/>   
+              <div class="wrapper"style="border-radius:10px;border:black 2px solid">
+                <img id="homePictureC" src="img/home.jpg" />    
+                <!--
+                <div style="position:absolute;width:100%">
+                <p class="centeredText" id="name">Jeffrey Chen</p>
+                <p class="centeredText">Mobile & Desktop App Developer</p>
+                <p class="centeredText">B.S. Computer Science Undergraduate, UCSD</p>
+                </div>
+                -->
               </div>
-              <p class="centeredText" id="name">Jeffrey Chen</p>
-              <p class="centeredText">Mobile & Desktop App Developer</p>
-              <p class="centeredText">B.S. Computer Science Undergraduate, UCSD</p>
-            </div>
             </div>
           </div>
           <div class="col-md-6">
-            about me
+            <div class="padding" >
+              <div class="wrapper">
+                <div class="yellowTransparency"style="background-color:#4CAF50; position:absolute"></div>
+                <div class="modal-block">
+              <div class="parent"><div class="child">
+                  <p class="centeredText" style="padding:1%; text-align:left">
+                 Hi! My name is Jeffrey and welcome to my webpage! I am a third year Computer Science major attending college at the University of California, San Diego. <br/><br/>I strive to become a well rounded individual who excels in many aspects of life. I have explored graphics, algorithms, and mobile/desktop app development. I am currently learning more about web development and have also taken an interest in programming challenges. Please check out the <a href="projects.html">Projects</a> page to learn more about what I've done.<br/><br/>When it comes to my free time, I love to sing, play badminton, and find new foods to enjoy. To find out more about my interests, please head over to the <a href="interests.html">Interests</a> page.
+                 </p>
+              </div>
+               </div></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -91,6 +119,9 @@
         $(document).ready(function() {
           $('#simple-menu').sidr({displace:true});
           $.sidr("close");
+          $('#padding2').height($('#padding1').height());
+          $('#highlight2').height($('#highlight1').height());
+          //$('#padding2').load(document.URL + ' #padding2');
         });
       </script>
 
