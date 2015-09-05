@@ -261,30 +261,33 @@
 
 
           <div class="row">
-            <a target="blank" href="https://sudowoodo-hitmeup.herokuapp.com/"><div class="col-md-6">
+            <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> 
-                <div class="parent">
+                <div class="modal-block modal-box tryYourself"> 
+                <div class="transparency"></div>
+                <div class="parent" style="position:relative; font-size:2em">
                   <div class="child">
-                  Try it Yourself!
+                  Try it Yourself! </br><a target="blank" href="https://sudowoodo-hitmeup.herokuapp.com/"><img style="height:1em; position:relative; border:solid black 2.5px;background-color:white"src="img/hitmeup.png"/></a> 
                   </div> 
                 </div>
                 </div> 
               </div>
-            </div></a>
+            </div>
 
-            <a data-toggle="modal" href="#hmu-bts">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> 
+                <div class="modal-block modal-box bts"> 
+                <div class="transparency"></div>
                   <div class="parent">
-                    <div class="child">
+                    <div class="child" style="position:relative">
+                      <a data-toggle="modal" href="#hmu-bts">
                       Behind the Scenes
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div></a>
+            </div>
 
           </div>
 
@@ -451,28 +454,32 @@
          <div class="row">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> 
-                <div class="parent">
+                <div class="modal-block modal-box tryYourself"> 
+                <div class="transparency"></div>
+                <div class="parent" style="position:relative; font-size:2em">
                   <div class="child">
                   <!--Try it Yourself! (instructions in readme)-->
-                  Try it Yourself! </br></br><a href="download/inventory_win.zip">Windows</a> <a href="download/inventory_mac.zip">OSX</a> 
+                  Try it Yourself! <a style="font-size:.7em" href="download/inventory_win.zip">Windows</a> <a style="font-size:.7em" href="download/inventory_mac.zip">OSX</a> 
                   </div> 
                 </div>
                 </div> 
               </div>
             </div>
-            <a data-toggle="modal" href="#inv-bts"><div class="col-md-6">
+            <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box">
+                <div class="modal-block modal-box bts">
+                <div class="transparency"></div>
                 <div class="parent">
-                  <div class="child">
+                  <div class="child" style="position:relative">
+                    <a data-toggle="modal" href="#inv-bts">
                     Behind the Scenes
+                    </a>
                   </div>
                   </div>
                 </div> 
               </div>
             </div>
-          </div></a>
+          </div>
 
 
           </div> <!-- body -->
@@ -605,29 +612,32 @@ I learned a lot about object design as well as using Qt. Front-end is no joke!
           <div class="row">
             <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box"> 
-                <div class="parent">
+                <div class="modal-block modal-box tryYourself"> 
+                <div class="transparency"></div>
+                <div class="parent" style="position:relative">
                   <div class="child">
-                  Try it Yourself! (instructions in readme)</br>
+                  Try it Yourself!</br> (instructions in readme)</br>
                   <a href="download/tooncutter_mac.zip">OSX</a>
                   </div> 
                 </div>
                 </div> 
               </div>
             </div>
-            <a data-toggle="modal" href="#toon-bts"><div class="col-md-6">
+            <div class="col-md-6">
               <div class="wrapper">
-                <div class="modal-block modal-box">
+                <div class="modal-block modal-box bts">
+                <div class="transparency"></div>
                 <div class="parent">
-                  <div class="child">
+                  <div class="child" style="position:relative">
+                    <a data-toggle="modal" href="#toon-bts">
                     Behind the Scenes
+                    </a>
                   </div>
                   </div>
                 </div> 
               </div>
             </div>
-          </div></a>
-
+          </div>
       </div>
     </div>
   </div>
@@ -720,6 +730,9 @@ I learned a lot about object design as well as using Qt. Front-end is no joke!
   }
     if(window.location.href.indexOf('#myModal') != -1) {
     $('#myModal').modal('show');
+  }
+  if(window.location.href.indexOf('#inv-bts') != -1) {
+    $('#inv-bts').modal('show');
   }
 
 $('.modal').on('hidden.bs.modal', function( event ) {

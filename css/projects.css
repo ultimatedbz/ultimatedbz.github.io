@@ -48,11 +48,11 @@ margin:0;
 
   position:absolute;
   background-color:white;
-  -webkit-filter: opacity(0.7);
-  -moz-filter: opacity(0.7);
-  -o-filter: opacity(0.7);
-  -ms-filter: opacity(0.7);
-  filter: opacity(0.7);
+  -webkit-filter: opacity(0.5);
+  -moz-filter: opacity(0.5);
+  -o-filter: opacity(0.5);
+  -ms-filter: opacity(0.5);
+  filter: opacity(0.5);
 
   height: 100%;
   width: 100%;
@@ -271,3 +271,29 @@ table {margin:1%}
 .modal-header .close {
   font-size: 2.8em; //bigger
 }
+
+.modal{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.tryYourself{
+  background-image: url("../img/anime_class2.gif");
+  font-family:Museo-Sans;
+  background-size: cover; 
+}
+
+.bts{
+  background-image: url("../img/bts2.jpg");
+  background-size: cover; 
+  font-family:Museo-Sans;
+}
+
+.bts a:link{
+  color:black;
+}
+
+.bts a:hover{
+  color:black;
+}
+

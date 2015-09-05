@@ -3,6 +3,11 @@
   src: url("../fonts/MANIFESTO.ttf")
 }
 
+@font-face{
+  font-family:Dense;
+  src: url("../fonts/Dense.otf")
+}
+
 html{
 margin:0;
    padding:0;

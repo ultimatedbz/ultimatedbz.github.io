@@ -89,6 +89,11 @@ margin:0;
     margin:10%;
 }
 
+.modal{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 .modal-backdrop {
   / background-color: red;
 }
