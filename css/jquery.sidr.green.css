@@ -1,4 +1,4 @@
-.sidr{display:none;position:absolute;position:fixed;top:0;height:100%;z-index:999999;width:100px;overflow-x:none;overflow-y:auto;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:15px;background:#43A047;color:#fff;-webkit-box-shadow:inset 0 0 5px 5px #1B5E20;-moz-box-shadow:inset 0 0 5px 5px #222;box-shadow:inset 0 0 5px 5px #1B5E20}
+.sidr{display:none;position:absolute;position:fixed;top:0;height:100%;z-index:999999;overflow-x:none;overflow-y:auto;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:15px;background:#43A047;color:#fff;-webkit-box-shadow:inset 0 0 5px 5px #1B5E20;-moz-box-shadow:inset 0 0 5px 5px #222;box-shadow:inset 0 0 5px 5px #1B5E20}
 
 .sidr .sidr-inner{padding:0 0 15px}
 .sidr .sidr-inner>p{margin-left:15px;margin-right:15px}.sidr.right{left:auto;right:-260px}

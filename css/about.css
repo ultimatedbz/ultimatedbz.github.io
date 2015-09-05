@@ -171,7 +171,7 @@ overflow:hidden;
   /* whatever width you want */
   display: inline-block;
   position: relative;
-overflow:hidden;
+overflow:scroll;
 }
 .wrapper2:after {
   padding-top: 50%;
@@ -195,3 +195,6 @@ position:relative;
 }
 
 
+ul ul{
+  padding:0
+}
