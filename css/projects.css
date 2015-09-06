@@ -117,7 +117,7 @@ margin:0;
 .modal-box{
   font-family:Manifesto;
   font-size: 2em;
-  background-color:#F3E5F5;
+  background-color:#757575;
   border: solid rgba(0,0,0,0.7);
 }
 .content img{
@@ -297,3 +297,6 @@ table {margin:1%}
   color:black;
 }
 
+.whiteText{
+  color:white
+}
