@@ -178,6 +178,19 @@ overflow:hidden;
   content: '';
 }
 
+.wrapper3 { /* sets aspect ratio */
+  width: 100%;
+  /* whatever width you want */
+  display: inline-block;
+  position: relative;
+overflow:hidden;
+}
+.wrapper3:after {
+  /* 16:9 ratio */
+  display: block;
+  content: '';
+}
+
 .absolute, .table, .middle {
     top: 0;
     left: 0;
@@ -224,8 +237,8 @@ table {margin:1%}
 .informationBar{
   position:absolute;
   display:block;
-  font size:0.75rem;
-  line-height:3em;
+  font-size:1em;
+  line-height:2em;
   bottom:0;
   background-color:rgba(0,0,0,0.7);
   width:100%;
